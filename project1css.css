@@ -30,10 +30,12 @@ h2, h3 {
     margin: 1.5em 0 1em;
 }
 
+/* Paragraphs and list formatting */
 p, li {
     font-size: 1em;
 }
 
+/* Style the figure captions */
 figcaption {
     font-size: 0.8em;
     color: rgb(56, 56, 56);
@@ -81,16 +83,13 @@ img {
     background: maroon;
 }
 
-.project {
-
-}
-
 /* Header */
 header {
     text-align: center;
     padding: 1em;
 }
 
+/* Style the headshot */
 #headshot {
     height: 24em;
     width: 18em;
