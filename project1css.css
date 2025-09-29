@@ -17,84 +17,126 @@ h1, h2, h3{
 }
 
 h1 {
-    font-size: 2.5rem;
-    margin-top: 1rem;
+    font-size: 2.5em;
+    margin-top: 1em;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-h2 {
+h2, h3 {
     color: #4d040c;
     border-bottom: 2px solid #333;
     display: inline-block;
     padding-bottom: 0.2em;
-    margin: 1.5rem 0 1rem;
+    margin: 1.5em 0 1em;
 }
 
+p, li {
+    font-size: 1em;
+}
+
+figcaption {
+    font-size: 0.8em;
+    color: rgb(56, 56, 56);
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto; 
+    display: block;
+    margin: 1em auto;
+}
+
+/* Other Buttons */
 .button {
     display: inline-block;
     background-color: #333;
     color: ivory;
-    padding: 0.6rem 1.2rem;
-    margin: 0.3rem;
+    padding: 0.6em 1.2em;
+    margin: 0.3em;
     border-radius: 6px;
     transition: background 0.2s ease;
+    text-decoration: none;
+    text-align: center;
 }
 
 .button:hover {
-    background: palevioletred;
+    background: maroon;
+}
+
+/* Footer buttons */
+.button_footer {
+    display: inline-block;
+    background-color: ivory;
+    color: #333;
+    padding: 0.4em 1.0em;
+    margin: 0.3em;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button_footer:hover {
+    background: maroon;
+}
+
+.project {
+
 }
 
 /* Header */
 header {
     text-align: center;
-    padding: 1rem;
+    padding: 1em;
 }
 
 #headshot {
     height: 24em;
-    width: 19em;
+    width: 18em;
     filter: grayscale();
-    margin: 1rem auto;
+    margin: 1em auto;
     display: block;
     border: solid;
 }
 
+/* Main Content */
 main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2em;
 }
 
 section {
     margin-bottom: 2em;
     background: rgb(240, 240, 220);
     border-radius: 8px;
-    padding: 1rem;
+    padding: 1em;
 }
 
 ul {
-    margin-left: 1rem;
+    margin-left: 1em;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 1rem;
+    padding: 1em;
     background-color: #333;
     color: white;
-    margin-top: 2rem;
+    margin-top: 2em;
 }
 
 /* Responsive Design */
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 2rem;
+        grid-gap: 2em;
     }
 
     section {
-        margin-bottom: 1rem;
+        margin-bottom: 1em;
     }
 
     #objective {
@@ -103,5 +145,17 @@ footer {
 
     #projects {
         grid-column: span 2;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1em;
+    }
+
+    .button, .button_footer {
+        display: block;
+        width: 80%;
+        margin: 0.5em auto;
     }
 }
